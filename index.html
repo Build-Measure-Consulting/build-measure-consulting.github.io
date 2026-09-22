@@ -104,12 +104,84 @@
 
             </nav>
 
+            <button
+                class="mobile-menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <a href="contact.html" class="header-cta">
                 Book a Consultation
             </a>
 
         </div>
     </header>
+
+    <!-- MOBILE NAVIGATION -->
+    <nav
+        class="mobile-navigation"
+        id="mobile-navigation"
+        aria-label="Mobile navigation"
+    >
+        <div class="mobile-nav-inner">
+
+            <a href="index.html" class="mobile-nav-link active">Home</a>
+
+            <details class="mobile-nav-group">
+                <summary>Services <span>+</span></summary>
+                <div class="mobile-submenu">
+                    <a href="services.html#operations">Operations &amp; Process Design</a>
+                    <a href="services.html#crm">CRM &amp; Systems Architecture</a>
+                    <a href="services.html#automation">Automation &amp; Integration</a>
+                    <a href="services.html#reporting">Data, Reporting &amp; Measurement</a>
+                </div>
+            </details>
+
+            <details class="mobile-nav-group">
+                <summary>Our Approach <span>+</span></summary>
+                <div class="mobile-submenu">
+                    <a href="approach.html">How We Work</a>
+                    <a href="approach.html#process">Our Process</a>
+                    <a href="approach.html#engagements">Engagement Options</a>
+                    <a href="approach.html#pricing">Pricing</a>
+                </div>
+            </details>
+
+            <details class="mobile-nav-group">
+                <summary>About <span>+</span></summary>
+                <div class="mobile-submenu">
+                    <a href="about.html">About Build &amp; Measure</a>
+                    <a href="about.html#brianna">Meet Brianna</a>
+                    <a href="about.html#montse">Meet Montse</a>
+                    <a href="about.html#story">Our Story</a>
+                </div>
+            </details>
+
+            <details class="mobile-nav-group">
+                <summary>Case Studies <span>+</span></summary>
+                <div class="mobile-submenu">
+                    <a href="case-studies.html">All Case Studies</a>
+                    <a href="case-studies.html#crm">CRM &amp; Systems</a>
+                    <a href="case-studies.html#automation">Automation</a>
+                    <a href="case-studies.html#operations">Operations</a>
+                    <a href="case-studies.html#data">Data &amp; Reporting</a>
+                </div>
+            </details>
+
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+
+            <a href="contact.html" class="mobile-nav-cta">
+                Book a Consultation
+            </a>
+
+        </div>
+    </nav>
 
 
     <!-- BRAND TAGLINE BAR -->
@@ -255,8 +327,12 @@
 
                 </div>
 
-                <p class="system-instruction">
+                <p class="system-instruction system-instruction-desktop">
                     Hover over each area to explore how we help.
+                </p>
+
+                <p class="system-instruction system-instruction-mobile">
+                    Tap each area to explore how we help.
                 </p>
 
             </div>
@@ -282,6 +358,24 @@
         </section>
 
     </main>
+
+    <script>
+        const menuToggle = document.querySelector(".mobile-menu-toggle");
+        const mobileNavigation = document.querySelector(".mobile-navigation");
+
+        if (menuToggle && mobileNavigation) {
+            menuToggle.addEventListener("click", () => {
+                const isOpen = mobileNavigation.classList.toggle("is-open");
+
+                menuToggle.classList.toggle("is-open", isOpen);
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+                menuToggle.setAttribute(
+                    "aria-label",
+                    isOpen ? "Close navigation menu" : "Open navigation menu"
+                );
+            });
+        }
+    </script>
 
 </body>
 </html>
