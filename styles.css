@@ -2108,3 +2108,1464 @@ button {
 .problem-bg-dot {
     display: none;
 }
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services-section {
+    padding: 125px 42px 130px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fc 100%);
+    color: var(--navy);
+}
+
+.services-inner {
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+
+/* ---------- INTRO ---------- */
+
+.services-intro {
+    display: grid;
+    grid-template-columns: 1.08fr 0.72fr;
+    gap: 110px;
+    align-items: end;
+    margin-bottom: 78px;
+}
+
+.services-intro .section-eyebrow,
+.engagement-heading .section-eyebrow {
+    margin-bottom: 18px;
+    color: var(--purple);
+}
+
+.services-intro h2 {
+    max-width: 780px;
+    font-family: var(--heading-font);
+    font-size: clamp(42px, 4.4vw, 66px);
+    font-weight: 700;
+    letter-spacing: -2.6px;
+    line-height: 1.04;
+    color: var(--navy);
+}
+
+.services-intro h2 span {
+    display: block;
+    margin-top: 8px;
+    color: var(--purple);
+}
+
+.services-intro-side {
+    max-width: 490px;
+    padding-bottom: 4px;
+}
+
+.services-intro-side p {
+    color: var(--slate);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.services-intro-side p + p {
+    margin-top: 18px;
+}
+
+
+/* ---------- SERVICE GRID ---------- */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid rgba(16, 34, 60, 0.14);
+    border-left: 1px solid rgba(16, 34, 60, 0.14);
+}
+
+.service-card {
+    min-height: 390px;
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    gap: 22px;
+    padding: 48px 46px;
+    position: relative;
+    border-right: 1px solid rgba(16, 34, 60, 0.14);
+    border-bottom: 1px solid rgba(16, 34, 60, 0.14);
+    background: rgba(255, 255, 255, 0.58);
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    z-index: 2;
+    background: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 22px 50px rgba(16, 34, 60, 0.09);
+}
+
+.service-card-featured {
+    grid-column: span 2;
+    min-height: 330px;
+    grid-template-columns: 58px minmax(0, 0.82fr);
+}
+
+.service-card-featured .service-card-content {
+    max-width: 760px;
+}
+
+.service-number {
+    padding-top: 5px;
+    font-family: var(--heading-font);
+    color: rgba(16, 34, 60, 0.30);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+.service-label {
+    margin-bottom: 13px;
+    font-family: var(--heading-font);
+    color: var(--purple);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}
+
+.service-card h3 {
+    max-width: 510px;
+    font-family: var(--heading-font);
+    color: var(--navy);
+    font-size: clamp(25px, 2.2vw, 33px);
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.12;
+}
+
+.service-card-content > p:not(.service-label) {
+    max-width: 550px;
+    margin-top: 18px;
+    color: var(--slate);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.service-card ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 25px;
+    max-width: 560px;
+    margin-top: 27px;
+    padding: 0;
+    list-style: none;
+}
+
+.service-card li {
+    position: relative;
+    padding-left: 17px;
+    color: var(--navy);
+    font-family: var(--heading-font);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.service-card li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    border-radius: 50%;
+    background: var(--lilac);
+}
+
+
+/* ---------- ENGAGEMENT MODEL ---------- */
+
+.engagement-section {
+    margin-top: 105px;
+    padding: 72px 70px;
+    display: grid;
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+    gap: 95px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--navy), #17294a);
+    color: var(--white);
+}
+
+.engagement-section::after {
+    content: "";
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    right: -220px;
+    top: -210px;
+    border: 1px solid rgba(157, 121, 240, 0.14);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.engagement-heading {
+    position: relative;
+    z-index: 1;
+}
+
+.engagement-heading h3 {
+    font-family: var(--heading-font);
+    font-size: clamp(32px, 3vw, 46px);
+    font-weight: 700;
+    letter-spacing: -1.6px;
+    line-height: 1.08;
+    color: var(--white);
+}
+
+.engagement-heading h3 span {
+    display: block;
+    margin-top: 7px;
+    color: var(--lilac);
+}
+
+.engagement-heading > p:last-child {
+    max-width: 470px;
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.67);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.engagement-path {
+    position: relative;
+    z-index: 1;
+}
+
+.engagement-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.engagement-item:first-child {
+    padding-top: 2px;
+}
+
+.engagement-item:last-child {
+    padding-bottom: 2px;
+    border-bottom: 0;
+}
+
+.engagement-step {
+    padding-top: 3px;
+    font-family: var(--heading-font);
+    color: var(--lilac);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.engagement-item h4 {
+    font-family: var(--heading-font);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+.engagement-item p {
+    max-width: 470px;
+    margin-top: 7px;
+    color: rgba(255, 255, 255, 0.57);
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   SERVICES RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 960px) {
+
+    .services-section {
+        padding: 95px 34px 105px;
+    }
+
+    .services-intro {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-bottom: 60px;
+    }
+
+    .services-intro-side {
+        max-width: 720px;
+    }
+
+    .engagement-section {
+        padding: 60px 50px;
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .service-card-featured {
+        grid-column: auto;
+        min-height: 0;
+        padding: 38px 30px;
+        grid-template-columns: 38px 1fr;
+        gap: 12px;
+    }
+
+    .service-card ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .services-section {
+        padding: 76px 24px 82px;
+    }
+
+    .services-intro {
+        margin-bottom: 48px;
+    }
+
+    .services-intro h2 {
+        font-size: 38px;
+        letter-spacing: -1.6px;
+    }
+
+    .services-intro-side p {
+        font-size: 14px;
+    }
+
+    .service-card,
+    .service-card-featured {
+        margin-left: -1px;
+        padding: 34px 22px;
+        grid-template-columns: 30px 1fr;
+    }
+
+    .service-card h3 {
+        font-size: 25px;
+    }
+
+    .engagement-section {
+        margin: 72px -24px -82px;
+        padding: 58px 24px 64px;
+        gap: 44px;
+    }
+
+    .engagement-heading h3 {
+        font-size: 32px;
+    }
+
+    .engagement-item {
+        grid-template-columns: 34px 1fr;
+        gap: 12px;
+    }
+}
+
+
+/* =========================================================
+   B&M — DESKTOP WIDTH SYSTEM
+   Establish one consistent page canvas.
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+    /*
+       Problem section:
+       expand the structural canvas to match the 1440px site width.
+    */
+
+    .problem-section {
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+
+    .problem-inner {
+        max-width: 1440px;
+    }
+
+
+    /*
+       Bridge:
+       escape the section's 42px outer gutter so the light bridge
+       spans the complete 1440px composition.
+    */
+
+    .problem-bridge {
+        margin-left: -42px;
+        margin-right: -42px;
+
+        padding-left: 84px;
+        padding-right: 84px;
+    }
+
+
+    /*
+       Services:
+       use the same 1440px structural canvas.
+    */
+
+    .services-inner {
+        max-width: 1440px;
+    }
+
+}
+
+
+
+/* =========================================================
+   B&M — HERO DESKTOP WIDTH REFINEMENT
+   Give the opening system visual more horizontal presence.
+   ========================================================= */
+
+@media (min-width: 1281px) {
+
+    .hero {
+        max-width: 1600px;
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+
+
+/* =========================================================
+   B&M SERVICES — SERVICE 01 DESIGN TEST
+   Scoped ONLY to the first service card.
+   ========================================================= */
+
+@media (min-width: 701px) {
+
+    /* Let Service 01 span the full Services canvas */
+    .services-section .services-grid > .service-card:first-child {
+        grid-column: 1 / -1;
+        min-height: 0;
+
+        display: grid;
+        grid-template-columns: 150px minmax(0, 1fr);
+        gap: 0;
+
+        padding: 0;
+
+        position: relative;
+        overflow: hidden;
+
+        background:
+            linear-gradient(
+                105deg,
+                rgba(157, 121, 240, 0.055) 0%,
+                rgba(255, 255, 255, 0.92) 32%,
+                #ffffff 70%
+            );
+
+        border: 1px solid rgba(8, 40, 84, 0.13);
+
+        box-shadow:
+            0 18px 55px rgba(8, 40, 84, 0.045);
+
+        transform: none;
+    }
+
+
+    /* Do not use the old card hover movement */
+    .services-section .services-grid > .service-card:first-child:hover {
+        transform: none;
+        background:
+            linear-gradient(
+                105deg,
+                rgba(157, 121, 240, 0.075) 0%,
+                rgba(255, 255, 255, 0.96) 32%,
+                #ffffff 70%
+            );
+
+        box-shadow:
+            0 22px 60px rgba(8, 40, 84, 0.07);
+    }
+
+
+    /* -----------------------------------------
+       NUMBER / SYSTEM RAIL
+       ----------------------------------------- */
+
+    .services-section .services-grid > .service-card:first-child .service-number {
+        min-height: 330px;
+
+        padding: 48px 0 44px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+
+        border-right: 1px solid rgba(8, 40, 84, 0.11);
+
+        color: rgba(8, 40, 84, 0.38);
+
+        font-family: var(--heading-font);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+
+    /* vertical system line */
+    .services-section .services-grid > .service-card:first-child .service-number::after {
+        content: "";
+
+        width: 1px;
+        height: 96px;
+
+        position: absolute;
+        left: 50%;
+        top: 151px;
+
+        transform: translateX(-50%);
+
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(157, 121, 240, 0.65),
+                rgba(157, 121, 240, 0.08)
+            );
+    }
+
+
+    /* custom gear / system symbol */
+    .services-section .services-grid > .service-card:first-child .service-number::before {
+        content: "✣";
+
+        width: 58px;
+        height: 58px;
+
+        position: absolute;
+        top: 78px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid rgba(157, 121, 240, 0.42);
+        border-radius: 50%;
+
+        background:
+            radial-gradient(
+                circle,
+                rgba(157, 121, 240, 0.13) 0 29%,
+                transparent 30%
+            ),
+            #ffffff;
+
+        box-shadow:
+            0 0 0 8px rgba(157, 121, 240, 0.045);
+
+        color: var(--purple);
+
+        font-family: Georgia, serif;
+        font-size: 29px;
+        font-weight: 400;
+
+        line-height: 1;
+    }
+
+
+    /* -----------------------------------------
+       MAIN SERVICE CONTENT
+       ----------------------------------------- */
+
+    .services-section .services-grid > .service-card:first-child .service-card-content {
+        max-width: none;
+
+        padding: 53px 64px 52px;
+
+        display: grid;
+        grid-template-columns:
+            minmax(420px, 0.95fr)
+            minmax(400px, 0.85fr);
+
+        column-gap: 90px;
+        align-items: center;
+    }
+
+
+    /* Category */
+    .services-section .services-grid > .service-card:first-child .service-label {
+        grid-column: 1;
+
+        margin-bottom: 14px;
+
+        color: var(--purple);
+
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2.6px;
+    }
+
+
+    /* Title */
+    .services-section .services-grid > .service-card:first-child h3 {
+        grid-column: 1;
+
+        max-width: 600px;
+
+        font-size: clamp(30px, 2.5vw, 39px);
+        line-height: 1.08;
+        letter-spacing: -1.3px;
+    }
+
+
+    /* Description */
+    .services-section .services-grid > .service-card:first-child .service-card-content > p:not(.service-label) {
+        grid-column: 1;
+
+        max-width: 610px;
+
+        margin-top: 20px;
+
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+
+    /* -----------------------------------------
+       CAPABILITIES
+       ----------------------------------------- */
+
+    .services-section .services-grid > .service-card:first-child ul {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+        padding: 0;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        border-top: 1px solid rgba(8, 40, 84, 0.11);
+    }
+
+
+    .services-section .services-grid > .service-card:first-child li {
+        min-height: 53px;
+
+        padding: 17px 38px 16px 0;
+
+        display: flex;
+        align-items: center;
+
+        position: relative;
+
+        border-bottom: 1px solid rgba(8, 40, 84, 0.11);
+
+        color: var(--navy);
+
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+    }
+
+
+    /* Remove old purple bullet */
+    .services-section .services-grid > .service-card:first-child li::before {
+        display: none;
+    }
+
+
+    /* System-style arrow instead */
+    .services-section .services-grid > .service-card:first-child li::after {
+        content: "→";
+
+        position: absolute;
+        right: 4px;
+
+        color: var(--lilac);
+
+        font-family: var(--heading-font);
+        font-size: 16px;
+        font-weight: 500;
+
+        transition: transform 0.2s ease;
+    }
+
+
+    .services-section .services-grid > .service-card:first-child:hover li::after {
+        transform: translateX(4px);
+    }
+
+}
+
+
+/* Keep Service 01 clean on smaller screens */
+@media (max-width: 700px) {
+
+    .services-section .services-grid > .service-card:first-child {
+        background:
+            linear-gradient(
+                145deg,
+                rgba(157, 121, 240, 0.055),
+                #ffffff 45%
+            );
+    }
+
+}
+
+
+/* =========================================================
+   B&M SERVICES — APPROVED VISUAL DIRECTION
+   Intro brush treatment + Service 01
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+    /* =====================================================
+       INTRO — BRUSH BACKGROUND
+       ===================================================== */
+
+    .services-section .services-intro {
+        position: relative;
+        isolation: isolate;
+    }
+
+    .services-section .services-intro-side {
+        position: relative;
+        z-index: 1;
+
+        max-width: 520px;
+        padding: 34px 34px 34px 30px;
+    }
+
+    /*
+       Soft irregular lavender wash behind the explanatory copy.
+       Built in CSS so we don't need another image asset.
+    */
+    .services-section .services-intro-side::before {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+
+        top: -34px;
+        right: -38px;
+        bottom: -30px;
+        left: -74px;
+
+        background:
+            radial-gradient(
+                ellipse at 48% 46%,
+                rgba(157, 121, 240, 0.15) 0%,
+                rgba(157, 121, 240, 0.105) 40%,
+                rgba(157, 121, 240, 0.055) 67%,
+                transparent 78%
+            );
+
+        clip-path: polygon(
+            4% 17%,
+            15% 10%,
+            30% 13%,
+            44% 5%,
+            61% 12%,
+            76% 7%,
+            96% 18%,
+            91% 30%,
+            99% 43%,
+            93% 55%,
+            98% 70%,
+            83% 76%,
+            70% 91%,
+            54% 84%,
+            38% 94%,
+            24% 83%,
+            7% 87%,
+            12% 70%,
+            2% 59%,
+            9% 45%,
+            1% 31%
+        );
+
+        filter: blur(0.2px);
+
+        pointer-events: none;
+    }
+
+
+    /*
+       Very subtle system orbit at the far-right edge,
+       echoing the visual language used elsewhere on the site.
+    */
+    .services-section .services-intro-side::after {
+        content: "";
+
+        width: 210px;
+        height: 210px;
+
+        position: absolute;
+        z-index: -1;
+
+        right: -54px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        border: 1px solid rgba(157, 121, 240, 0.20);
+        border-radius: 50%;
+
+        pointer-events: none;
+    }
+
+
+    /* =====================================================
+       SERVICE 01 — APPROVED ROW COMPOSITION
+       ===================================================== */
+
+    .services-section .services-grid > .service-card:first-child {
+        grid-column: 1 / -1;
+
+        min-height: 365px;
+
+        display: grid;
+        grid-template-columns: 155px minmax(0, 1fr);
+
+        gap: 0;
+        padding: 0;
+
+        overflow: hidden;
+        position: relative;
+
+        border: 1px solid rgba(8, 40, 84, 0.13);
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(157, 121, 240, 0.065) 0,
+                rgba(157, 121, 240, 0.025) 155px,
+                #ffffff 155px,
+                #ffffff 100%
+            );
+
+        box-shadow:
+            0 18px 50px rgba(8, 40, 84, 0.045);
+
+        transform: none;
+    }
+
+    .services-section .services-grid > .service-card:first-child:hover {
+        transform: none;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(157, 121, 240, 0.075) 0,
+                rgba(157, 121, 240, 0.03) 155px,
+                #ffffff 155px,
+                #ffffff 100%
+            );
+
+        box-shadow:
+            0 20px 55px rgba(8, 40, 84, 0.06);
+    }
+
+
+    /* =====================================================
+       LEFT SYSTEM RAIL
+       ===================================================== */
+
+    .services-section .services-grid > .service-card:first-child .service-number {
+        min-height: 365px;
+
+        padding: 45px 0 0;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+
+        position: relative;
+
+        border-right: 1px solid rgba(8, 40, 84, 0.11);
+
+        color: rgba(8, 40, 84, 0.46);
+
+        font-family: var(--heading-font);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+
+    /*
+       Gear housing.
+       The gear itself is drawn with text strokes inside
+       a clean circular system node.
+    */
+    .services-section .services-grid > .service-card:first-child .service-number::before {
+        content: "⚙";
+
+        width: 68px;
+        height: 68px;
+
+        position: absolute;
+
+        top: 86px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid rgba(157, 121, 240, 0.30);
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.96);
+
+        box-shadow:
+            0 0 0 8px rgba(157, 121, 240, 0.045),
+            0 8px 22px rgba(118, 85, 199, 0.08);
+
+        color: #8B63E6;
+
+        font-family: Arial, sans-serif;
+        font-size: 34px;
+        font-weight: 400;
+
+        line-height: 1;
+    }
+
+
+    /* Vertical continuation line beneath gear */
+    .services-section .services-grid > .service-card:first-child .service-number::after {
+        content: "";
+
+        width: 1px;
+        height: 110px;
+
+        position: absolute;
+
+        top: 171px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(157, 121, 240, 0.55),
+                rgba(157, 121, 240, 0.08)
+            );
+    }
+
+
+    /* =====================================================
+       SERVICE CONTENT
+       ===================================================== */
+
+    .services-section .services-grid > .service-card:first-child .service-card-content {
+        max-width: none;
+
+        padding: 54px 58px 52px;
+
+        display: grid;
+
+        grid-template-columns:
+            minmax(470px, 1.15fr)
+            minmax(360px, 0.85fr);
+
+        grid-template-rows: auto auto 1fr;
+
+        column-gap: 84px;
+
+        position: relative;
+    }
+
+
+    .services-section .services-grid > .service-card:first-child .service-label {
+        grid-column: 1;
+        grid-row: 1;
+
+        margin: 0 0 16px;
+
+        color: var(--purple);
+
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2.7px;
+    }
+
+
+    .services-section .services-grid > .service-card:first-child h3 {
+        grid-column: 1;
+        grid-row: 2;
+
+        max-width: 650px;
+
+        margin: 0;
+
+        color: var(--navy);
+
+        font-size: clamp(31px, 2.45vw, 40px);
+        line-height: 1.08;
+        letter-spacing: -1.35px;
+    }
+
+
+    .services-section .services-grid > .service-card:first-child
+    .service-card-content > p:not(.service-label) {
+
+        grid-column: 1;
+        grid-row: 3;
+
+        max-width: 650px;
+
+        margin: 23px 0 0;
+
+        color: var(--slate);
+
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+
+    /* =====================================================
+       KEY CAPABILITIES
+       ===================================================== */
+
+    .services-section .services-grid > .service-card:first-child ul {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        padding:
+            42px
+            0
+            0
+            48px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        position: relative;
+
+        border-top: 0;
+        border-left: 1px solid rgba(8, 40, 84, 0.12);
+    }
+
+
+    /* KEY CAPABILITIES heading */
+    .services-section .services-grid > .service-card:first-child ul::before {
+        content: "KEY CAPABILITIES";
+
+        position: absolute;
+
+        top: 0;
+        left: 48px;
+
+        color: rgba(8, 40, 84, 0.48);
+
+        font-family: var(--heading-font);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2.6px;
+    }
+
+
+    .services-section .services-grid > .service-card:first-child li {
+        min-height: 55px;
+
+        padding: 17px 0;
+
+        display: flex;
+        align-items: center;
+
+        border-top: 1px solid rgba(8, 40, 84, 0.10);
+
+        color: var(--navy);
+
+        font-family: var(--heading-font);
+        font-size: 11px;
+        font-weight: 600;
+
+        line-height: 1.45;
+    }
+
+
+    .services-section .services-grid > .service-card:first-child li:last-child {
+        border-bottom: 1px solid rgba(8, 40, 84, 0.10);
+    }
+
+
+    /* Kill BOTH old bullets and arrows */
+    .services-section .services-grid > .service-card:first-child li::before,
+    .services-section .services-grid > .service-card:first-child li::after {
+        content: none !important;
+        display: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   SERVICES INTRO — MOBILE/TABLET
+   Keep the brush subtle and safely contained.
+   ========================================================= */
+
+@media (max-width: 960px) {
+
+    .services-section .services-intro-side {
+        position: relative;
+        isolation: isolate;
+
+        padding: 28px 26px;
+    }
+
+    .services-section .services-intro-side::before {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+
+        inset: -12px -10px;
+
+        background:
+            radial-gradient(
+                ellipse at center,
+                rgba(157, 121, 240, 0.12),
+                rgba(157, 121, 240, 0.045) 68%,
+                transparent 78%
+            );
+
+        pointer-events: none;
+    }
+
+}
+
+
+
+/* =========================================================
+   B&M SERVICES — ROWS 02–05
+   Extend approved Service 01 system.
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+    /* -----------------------------------------------------
+       FULL-WIDTH ROW STRUCTURE
+       ----------------------------------------------------- */
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) {
+        grid-column: 1 / -1;
+
+        min-height: 365px;
+
+        display: grid;
+        grid-template-columns: 155px minmax(0, 1fr);
+
+        gap: 0;
+        padding: 0;
+
+        overflow: hidden;
+        position: relative;
+
+        border: 1px solid rgba(8, 40, 84, 0.13);
+        border-top: 0;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(157, 121, 240, 0.065) 0,
+                rgba(157, 121, 240, 0.025) 155px,
+                #ffffff 155px,
+                #ffffff 100%
+            );
+
+        box-shadow:
+            0 18px 50px rgba(8, 40, 84, 0.035);
+
+        transform: none;
+    }
+
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5):hover {
+        transform: none;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(157, 121, 240, 0.075) 0,
+                rgba(157, 121, 240, 0.03) 155px,
+                #ffffff 155px,
+                #ffffff 100%
+            );
+
+        box-shadow:
+            0 20px 55px rgba(8, 40, 84, 0.055);
+    }
+
+
+    /* -----------------------------------------------------
+       NUMBER / GEAR RAIL
+       ----------------------------------------------------- */
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) .service-number {
+        min-height: 365px;
+
+        padding: 45px 0 0;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+
+        position: relative;
+
+        border-right: 1px solid rgba(8, 40, 84, 0.11);
+
+        color: rgba(8, 40, 84, 0.46);
+
+        font-family: var(--heading-font);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) .service-number::before {
+        content: "⚙";
+
+        width: 68px;
+        height: 68px;
+
+        position: absolute;
+
+        top: 86px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid rgba(157, 121, 240, 0.30);
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.96);
+
+        box-shadow:
+            0 0 0 8px rgba(157, 121, 240, 0.045),
+            0 8px 22px rgba(118, 85, 199, 0.08);
+
+        color: #8B63E6;
+
+        font-family: Arial, sans-serif;
+        font-size: 34px;
+        font-weight: 400;
+
+        line-height: 1;
+    }
+
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) .service-number::after {
+        content: "";
+
+        width: 1px;
+        height: 110px;
+
+        position: absolute;
+
+        top: 171px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(157, 121, 240, 0.55),
+                rgba(157, 121, 240, 0.08)
+            );
+    }
+
+
+    /* -----------------------------------------------------
+       MAIN CONTENT
+       ----------------------------------------------------- */
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) .service-card-content {
+        max-width: none;
+
+        padding: 54px 58px 52px;
+
+        display: grid;
+
+        grid-template-columns:
+            minmax(470px, 1.15fr)
+            minmax(360px, 0.85fr);
+
+        grid-template-rows: auto auto 1fr;
+
+        column-gap: 84px;
+
+        position: relative;
+    }
+
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) .service-label {
+        grid-column: 1;
+        grid-row: 1;
+
+        margin: 0 0 16px;
+
+        color: var(--purple);
+
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2.7px;
+    }
+
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) h3 {
+        grid-column: 1;
+        grid-row: 2;
+
+        max-width: 650px;
+
+        margin: 0;
+
+        color: var(--navy);
+
+        font-size: clamp(31px, 2.45vw, 40px);
+        line-height: 1.08;
+        letter-spacing: -1.35px;
+    }
+
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5)
+    .service-card-content > p:not(.service-label) {
+
+        grid-column: 1;
+        grid-row: 3;
+
+        max-width: 650px;
+
+        margin: 23px 0 0;
+
+        color: var(--slate);
+
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+
+    /* -----------------------------------------------------
+       KEY CAPABILITIES
+       ----------------------------------------------------- */
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) ul {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        padding: 42px 0 0 48px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        position: relative;
+
+        border-top: 0;
+        border-left: 1px solid rgba(8, 40, 84, 0.12);
+    }
+
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) ul::before {
+        content: "KEY CAPABILITIES";
+
+        position: absolute;
+
+        top: 0;
+        left: 48px;
+
+        color: rgba(8, 40, 84, 0.48);
+
+        font-family: var(--heading-font);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2.6px;
+    }
+
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) li {
+        min-height: 55px;
+
+        padding: 17px 0;
+
+        display: flex;
+        align-items: center;
+
+        border-top: 1px solid rgba(8, 40, 84, 0.10);
+
+        color: var(--navy);
+
+        font-family: var(--heading-font);
+        font-size: 11px;
+        font-weight: 600;
+
+        line-height: 1.45;
+    }
+
+
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) li:last-child {
+        border-bottom: 1px solid rgba(8, 40, 84, 0.10);
+    }
+
+
+    /* Remove old dots/arrows */
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) li::before,
+    .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) li::after {
+        content: none !important;
+        display: none !important;
+    }
+
+}
+
