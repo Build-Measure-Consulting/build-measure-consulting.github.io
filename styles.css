@@ -6642,3 +6642,650 @@ button {
   }
 }
 
+
+
+/* =========================================================
+   B&M HOMEPAGE — DESKTOP REFINEMENT PASS
+   Structural spacing/alignment after content simplification
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  /* -------------------------------------------------------
+     WHAT WE DO
+     Give the new headline a controlled, intentional measure
+     ------------------------------------------------------- */
+
+  .services-intro-copy h2 {
+    max-width: 760px;
+  }
+
+  .services-intro-copy h2 span {
+    display: block;
+  }
+
+  .services-intro-copy h2 strong {
+    font: inherit;
+    color: inherit;
+    font-weight: inherit;
+  }
+
+
+  /* -------------------------------------------------------
+     BUILT DIFFERENTLY
+     Rebuild principle grid now that number rail is gone
+     ------------------------------------------------------- */
+
+  .why-bm-principles {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+  }
+
+  .why-bm-principle {
+    display: block !important;
+    min-width: 0 !important;
+    width: auto !important;
+    padding: 52px 56px 54px !important;
+  }
+
+  .why-bm-principle > div {
+    width: 100% !important;
+    max-width: 520px !important;
+  }
+
+  .why-bm-principle h3 {
+    width: auto !important;
+    max-width: 390px !important;
+    margin: 0 0 22px !important;
+  }
+
+  .why-bm-principle h3::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 2px;
+    margin-top: 18px;
+    background: #9b74e8;
+  }
+
+  .why-bm-principle p {
+    width: auto !important;
+    max-width: 500px !important;
+    margin: 0 !important;
+  }
+
+  /* Keep the four principles as a clean 2 × 2 system */
+  .why-bm-principle:nth-child(odd) {
+    border-right: 1px solid rgba(12, 45, 88, 0.12);
+  }
+
+  .why-bm-principle:nth-child(-n+2) {
+    border-bottom: 1px solid rgba(12, 45, 88, 0.12);
+  }
+
+  /* Remove old decorative/number-dependent positioning */
+  .why-bm-principle::before,
+  .why-bm-principle::after {
+    pointer-events: none;
+  }
+
+
+  /* -------------------------------------------------------
+     BUILT DIFFERENTLY — CLOSING QUESTION
+     Wider content measure so the statement stays on one line
+     ------------------------------------------------------- */
+
+  .why-bm-question {
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+  }
+
+  .why-bm-question h3 {
+    width: 100% !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    font-size: clamp(2.35rem, 3.25vw, 4rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.04em !important;
+  }
+
+
+  /* -------------------------------------------------------
+     SYSTEM LOOP
+     Tighten vertical rhythm without changing approved orbit
+     ------------------------------------------------------- */
+
+  .bm-loop-section {
+    row-gap: 34px;
+  }
+
+  .bm-loop-heading {
+    align-self: center;
+  }
+
+  .bm-loop-entry {
+    margin-top: 34px !important;
+  }
+
+
+  /* -------------------------------------------------------
+     GENERAL SECTION RHYTHM
+     Reduce unnecessary desktop dead space
+     ------------------------------------------------------- */
+
+  .services-section,
+  .why-bm-section {
+    scroll-margin-top: 100px;
+  }
+
+}
+
+
+/* =========================================================
+   B&M BUILT DIFFERENTLY — RESTORE PRINCIPLE ICONS
+   Icons only; numbered badges remain removed
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  .why-bm-principle {
+    position: relative;
+    padding-left: 132px !important;
+  }
+
+  .why-bm-icon {
+    position: absolute;
+    top: 52px;
+    left: 46px;
+
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(151, 103, 238, 0.32);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    box-shadow:
+      0 0 0 8px rgba(151, 103, 238, 0.045),
+      0 10px 30px rgba(74, 47, 130, 0.08);
+  }
+
+  .why-bm-icon svg {
+    width: 28px;
+    height: 28px;
+
+    stroke: #9565ec;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+}
+
+
+/* =========================================================
+   B&M BUILT DIFFERENTLY — FINAL ICON TREATMENT
+   Match original circular icon design, without number badges
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  .why-bm-principle {
+    position: relative !important;
+    padding: 52px 56px 54px 132px !important;
+  }
+
+  .why-bm-principle > .why-bm-icon {
+    position: absolute !important;
+    top: 52px !important;
+    left: 46px !important;
+
+    width: 62px !important;
+    min-width: 62px !important;
+    max-width: 62px !important;
+
+    height: 62px !important;
+    min-height: 62px !important;
+    max-height: 62px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: 1px solid rgba(151, 103, 238, 0.30) !important;
+    border-radius: 50% !important;
+
+    background: rgba(255, 255, 255, 0.96) !important;
+
+    box-shadow:
+      0 0 0 8px rgba(151, 103, 238, 0.045),
+      0 8px 24px rgba(74, 47, 130, 0.08) !important;
+
+    transform: none !important;
+    flex: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .why-bm-principle > .why-bm-icon svg {
+    display: block !important;
+
+    width: 26px !important;
+    min-width: 26px !important;
+    max-width: 26px !important;
+
+    height: 26px !important;
+    min-height: 26px !important;
+    max-height: 26px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    stroke: #9565ec !important;
+    stroke-width: 1.8 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+
+    fill: none !important;
+    transform: none !important;
+  }
+
+  .why-bm-principle > .why-bm-icon::before,
+  .why-bm-principle > .why-bm-icon::after {
+    content: none !important;
+    display: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — BUILT DIFFERENTLY DESKTOP SPACING
+   Final rhythm pass
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  /* Tighten the transition from the intro into the principles */
+  .why-bm-intro {
+    padding-bottom: 54px !important;
+  }
+
+  .why-bm-principles-label {
+    padding-top: 30px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .why-bm-principles {
+    margin-top: 14px !important;
+  }
+
+  /* Make the four principles feel intentional rather than oversized */
+  .why-bm-principle {
+    min-height: 0 !important;
+    padding-top: 42px !important;
+    padding-bottom: 44px !important;
+  }
+
+  .why-bm-principle > .why-bm-icon {
+    top: 42px !important;
+  }
+
+  .why-bm-principle h3 {
+    margin-bottom: 18px !important;
+  }
+
+  .why-bm-principle h3::after {
+    margin-top: 14px !important;
+  }
+
+  /* Bring the closing thought into the composition */
+  .why-bm-question {
+    margin-top: 52px !important;
+    padding-top: 54px !important;
+    padding-bottom: 56px !important;
+  }
+
+}
+
+/* =========================================================
+   B&M — SYSTEM LOOP → BUILT DIFFERENTLY TRANSITION
+   Remove legacy exterior whitespace between the two sections.
+   Desktop only.
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  .bm-loop-section {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .bm-loop-section + .why-bm-section {
+    margin-top: 0 !important;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — BUILT DIFFERENTLY SECTION ENTRY SPACING
+   Reduce oversized white space after the System Loop.
+   Desktop only.
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  .why-bm-section {
+    padding-top: 64px !important;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — BUILT DIFFERENTLY DIVIDER CLEANUP
+   Use the labeled principles divider as the sole divider.
+   Desktop only.
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  .why-bm-intro {
+    border-bottom: 0 !important;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — SERVICES DESKTOP CONTENT RHYTHM
+   Keep category, title, and description naturally grouped.
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  .services-section .services-grid > .service-card:first-child .service-card-content,
+  .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) .service-card-content {
+    grid-template-rows: auto auto auto !important;
+    align-content: start !important;
+  }
+
+  .services-section .services-grid > .service-card:first-child .service-card-content > p:not(.service-label),
+  .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) .service-card-content > p:not(.service-label) {
+    margin-top: 20px !important;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — SYSTEM LOOP DESKTOP LEFT-COLUMN ALIGNMENT
+   Center both headline compositions within their left-side
+   layout areas without moving the diagram or supporting copy.
+   ========================================================= */
+
+@media (min-width: 1181px) {
+
+  /* Main Build / Measure / Improve heading */
+  .bm-loop-heading {
+    width: 100%;
+    max-width: 480px;
+    justify-self: center !important;
+  }
+
+  /* Start Anywhere heading */
+  .bm-loop-entry-heading {
+    width: 100%;
+    max-width: 480px;
+    justify-self: center !important;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — SYSTEM LOOP DESKTOP STAGGERED HEADLINE
+   Give the primary loop headline controlled forward motion.
+   ========================================================= */
+
+@media (min-width: 1181px) {
+
+  .bm-loop-stagger {
+    max-width: 560px !important;
+  }
+
+  .bm-loop-stagger > .bm-loop-word {
+    display: block !important;
+    width: max-content;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-build {
+    margin-left: 0;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-measure {
+    margin-left: 34px;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-improve {
+    margin-left: 68px;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-repeat {
+    margin-top: 10px;
+    margin-left: 102px;
+    color: #9d79f0;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-repeat > span {
+    display: block;
+    width: max-content;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-repeat > span:last-child {
+    margin-left: 34px;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — SYSTEM LOOP STAGGER REFINEMENT
+   White process words + single-line purple closing thought.
+   Desktop only.
+   ========================================================= */
+
+@media (min-width: 1181px) {
+
+  /* Process statement stays white */
+  .bm-loop-stagger > .bm-loop-word-build,
+  .bm-loop-stagger > .bm-loop-word-measure,
+  .bm-loop-stagger > .bm-loop-word-improve {
+    color: #ffffff !important;
+  }
+
+  /* Keep the closing thought together */
+  .bm-loop-stagger > .bm-loop-word-repeat {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 0.22em;
+    width: max-content !important;
+    max-width: none !important;
+    margin-left: 102px;
+    color: #9d79f0 !important;
+    white-space: nowrap;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-repeat > span {
+    display: inline !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    color: inherit !important;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — SYSTEM LOOP HEADLINE FINAL ALIGNMENT
+   Strengthen the staircase and widen supporting copy.
+   Desktop only.
+   ========================================================= */
+
+@media (min-width: 1181px) {
+
+  /* Push Improve farther into the staircase */
+  .bm-loop-stagger > .bm-loop-word-improve {
+    margin-left: 92px !important;
+  }
+
+  /* Keep copy aligned with Build, but extend beneath the headline */
+  .bm-loop-heading > p:last-child {
+    width: 560px !important;
+    max-width: 560px !important;
+  }
+
+}
+
+
+/* B&M — Align loop closing statement with Build */
+@media (min-width: 1181px) {
+
+  .bm-loop-stagger > .bm-loop-word-repeat {
+    margin-left: 0 !important;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — PROBLEM DIAGNOSTIC DESKTOP GRID
+   Six concise signals in a balanced 3 x 2 composition.
+   Mobile/tablet remain unchanged.
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  .problem-diagnostic {
+    padding-top: 38px !important;
+    padding-bottom: 64px !important;
+  }
+
+  .problem-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 72px !important;
+  }
+
+  .problem-item {
+    min-height: 0 !important;
+    padding: 28px 0 !important;
+
+    display: grid !important;
+    grid-template-columns: 34px minmax(0, 1fr) !important;
+    gap: 18px !important;
+    align-items: center !important;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  }
+
+  /* Keep each column visually separated without creating boxes */
+  .problem-item:nth-child(odd) {
+    padding-right: 36px !important;
+  }
+
+  .problem-item:nth-child(even) {
+    padding-left: 36px !important;
+  }
+
+  .problem-marker {
+    justify-self: start;
+  }
+
+  .problem-item-content {
+    display: block !important;
+  }
+
+  .problem-item h3 {
+    margin: 0 !important;
+  }
+
+  /* Don't let the old hover treatment shift the grid */
+  .problem-item:hover {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .problem-item:nth-child(odd):hover {
+    padding-left: 0 !important;
+    padding-right: 36px !important;
+  }
+
+  .problem-item:nth-child(even):hover {
+    padding-left: 36px !important;
+  }
+
+}
+
+
+/* =========================================================
+   B&M — PROBLEM DIAGNOSTIC DIVIDER
+   One centered labeled divider instead of stacked lines.
+   Desktop only.
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  /* Remove redundant line above the diagnostic heading */
+  .problem-diagnostic {
+    border-top: 0 !important;
+  }
+
+  /* Center label between two matching lines */
+  .diagnostic-heading {
+    display: grid !important;
+    grid-template-columns: minmax(40px, 1fr) auto minmax(40px, 1fr) !important;
+    align-items: center !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .diagnostic-heading::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(157, 121, 240, 0.35)
+    );
+  }
+
+  .diagnostic-heading > span:first-child {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .diagnostic-heading .diagnostic-line {
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: linear-gradient(
+      90deg,
+      rgba(157, 121, 240, 0.35),
+      rgba(255, 255, 255, 0.03)
+    ) !important;
+  }
+
+}
+
