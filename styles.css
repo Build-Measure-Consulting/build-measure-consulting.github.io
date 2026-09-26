@@ -6600,3 +6600,29 @@ button {
   }
 }
 
+
+/* =========================================================
+   B&M — SYSTEM LOOP TRUE FULL BLEED
+   Match Problem + Experience navy sections at every viewport.
+   ========================================================= */
+
+.bm-loop-section {
+  width: 100vw !important;
+  max-width: none !important;
+
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Keep the actual content aligned with the rest of the site
+   while allowing the navy background itself to reach the edges. */
+.bm-loop-section > .bm-loop-heading,
+.bm-loop-section > .bm-loop-visual,
+.bm-loop-section > .bm-loop-entry {
+  box-sizing: border-box;
+}
+
