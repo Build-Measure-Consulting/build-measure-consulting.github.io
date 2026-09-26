@@ -4714,3 +4714,148 @@ button {
   }
 }
 
+
+
+/* =========================================================
+   B&M HOMEPAGE — MOBILE COMPRESSION V2
+   Desktop content remains unchanged.
+   Mobile becomes a focused homepage overview.
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  /* -------------------------------------------------------
+     REMOVE DESKTOP-LEVEL DETAIL FROM MOBILE HOMEPAGE
+     ------------------------------------------------------- */
+
+  /* Repeated capability strip:
+     "Built around the systems that drive your business" */
+  .capability-strip {
+    display: none !important;
+  }
+
+  /* Service-page-level capability lists */
+  .services-grid .service-card-content ul {
+    display: none !important;
+  }
+
+  /* Detailed case-study material belongs on Case Studies */
+  .experience-flow,
+  .experience-story-details {
+    display: none !important;
+  }
+
+  /* Scale metrics can live on About / Case Studies */
+  .experience-scale {
+    display: none !important;
+  }
+
+
+  /* -------------------------------------------------------
+     PROBLEM SECTION
+     Keep the five signals, remove explanatory sentences
+     ------------------------------------------------------- */
+
+  .problem-item-content p {
+    display: none !important;
+  }
+
+  .problem-item {
+    min-height: 0 !important;
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  }
+
+  .problem-item-content h3 {
+    margin-bottom: 0 !important;
+  }
+
+  .problem-list {
+    margin-bottom: 0 !important;
+  }
+
+
+  /* -------------------------------------------------------
+     SERVICES
+     Five concise homepage service summaries
+     ------------------------------------------------------- */
+
+  .services-grid .service-card {
+    min-height: 0 !important;
+  }
+
+  .services-grid .service-card-content {
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
+  }
+
+  .services-grid .service-card-content h3 {
+    margin-bottom: 12px !important;
+  }
+
+  .services-grid .service-card-content > p:not(.service-label) {
+    margin-bottom: 0 !important;
+  }
+
+
+  /* -------------------------------------------------------
+     METHODOLOGY
+     Preserve all four stages, reduce excess vertical space
+     ------------------------------------------------------- */
+
+  .engagement-item {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .engagement-item p {
+    margin-bottom: 0 !important;
+  }
+
+
+  /* -------------------------------------------------------
+     BUILT DIFFERENTLY
+     Preserve differentiators, make cards more compact
+     ------------------------------------------------------- */
+
+  .why-bm-principle {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .why-bm-principle p {
+    margin-bottom: 0 !important;
+  }
+
+
+  /* -------------------------------------------------------
+     EXPERIENCE
+     Turn full case studies into proof-point teasers
+     ------------------------------------------------------- */
+
+  .experience-story {
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
+  }
+
+  .experience-story-main {
+    margin-bottom: 0 !important;
+  }
+
+  .experience-story-summary {
+    margin-bottom: 0 !important;
+  }
+
+  .experience-story-rail {
+    margin-bottom: 22px !important;
+  }
+
+  .experience-stories {
+    margin-bottom: 0 !important;
+  }
+
+  .experience-section {
+    padding-bottom: 64px !important;
+  }
+
+}
