@@ -4859,3 +4859,109 @@ button {
   }
 
 }
+
+
+/* =========================================================
+   B&M HOMEPAGE — MOBILE SPACING + COPY V3
+   Final refinement of Services + Built Differently.
+   Desktop remains unchanged.
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  /* =======================================================
+     WHAT WE DO — REMOVE EXCESS VERTICAL SPACE
+     ======================================================= */
+
+  .services-section {
+    padding-top: 58px !important;
+    padding-bottom: 58px !important;
+  }
+
+  .services-inner {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .services-intro {
+    margin-top: 0 !important;
+    margin-bottom: 38px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .services-intro-side {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .services-grid {
+    margin-top: 0 !important;
+  }
+
+
+  /* =======================================================
+     SERVICES — COMPACT MOBILE CARDS
+     Override the desktop system-row dimensions.
+     ======================================================= */
+
+  .services-section .services-grid > .service-card,
+  .services-section .services-grid > .service-card:first-child,
+  .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .services-section .services-grid > .service-card .service-card-content,
+  .services-section .services-grid > .service-card:first-child .service-card-content,
+  .services-section .services-grid > .service-card:nth-child(n+2):nth-child(-n+5) .service-card-content {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .services-section .services-grid > .service-card h3 {
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .services-section .services-grid > .service-card .service-label {
+    margin-bottom: 12px !important;
+  }
+
+  .services-section .services-grid > .service-card .service-card-content > p:not(.service-label) {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+
+  /* =======================================================
+     BUILT DIFFERENTLY — SHORTER MOBILE INTRO
+     Keep approved desktop copy untouched.
+     ======================================================= */
+
+  .why-bm-intro-copy p:nth-child(2) {
+    display: none !important;
+  }
+
+  .why-bm-intro-copy::after {
+    content: "We design for the people doing the work and the leaders relying on it—reducing friction for users while creating better visibility for the business.";
+    display: block;
+    margin-top: 22px;
+    font: inherit;
+    color: inherit;
+    line-height: inherit;
+  }
+
+  .why-bm-intro {
+    margin-bottom: 44px !important;
+  }
+
+  .why-bm-principles-label {
+    margin-top: 0 !important;
+  }
+
+}
