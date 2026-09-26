@@ -6626,3 +6626,19 @@ button {
   box-sizing: border-box;
 }
 
+
+/* =========================================================
+   B&M SYSTEM LOOP — MOBILE FULL BLEED
+   Keep the signature navy section edge-to-edge on phones
+   ========================================================= */
+
+@media (max-width: 960px) {
+  .bm-loop-section {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    border-radius: 0 !important;
+  }
+}
+
