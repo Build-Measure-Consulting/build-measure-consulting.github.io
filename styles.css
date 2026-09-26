@@ -4681,3 +4681,36 @@ button {
   }
 }
 
+
+/* =========================================================
+   B&M HOMEPAGE COMPRESSION — MOBILE SERVICES
+   Keep full service capabilities on larger screens while
+   giving phone visitors a faster, more scannable overview.
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  /* Detailed capabilities belong on the Services page */
+  .services-grid .service-card-content ul {
+    display: none;
+  }
+
+  /* Reduce vertical weight of each service row */
+  .services-grid .service-card {
+    min-height: 0;
+  }
+
+  .services-grid .service-card-content {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .services-grid .service-card-content h3 {
+    margin-bottom: 12px;
+  }
+
+  .services-grid .service-card-content > p:not(.service-label) {
+    margin-bottom: 0;
+  }
+}
+
