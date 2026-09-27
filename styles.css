@@ -7841,3 +7841,127 @@ button {
     height: 29px !important;
   }
 }
+
+
+@media (max-width: 960px) {
+
+  .problem-section {
+    padding-bottom: 0 !important;
+  }
+
+  .problem-diagnostic {
+    padding-bottom: 0 !important;
+  }
+
+  .problem-list {
+    margin-bottom: 0 !important;
+  }
+
+  .problem-item:nth-last-child(-n + 2) {
+    padding-bottom: 16px !important;
+    border-bottom: 0 !important;
+  }
+
+  .problem-bridge {
+    min-height: 0 !important;
+    padding-top: 32px !important;
+
+    display: grid !important;
+    grid-template-columns: 32px minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    row-gap: 22px !important;
+    align-items: center !important;
+  }
+
+  .bridge-accent {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+
+    width: 32px !important;
+    height: 32px !important;
+
+    margin: 0 !important;
+  }
+
+  .bridge-accent::before {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .bridge-accent::after {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .bridge-accent span {
+    width: 5px !important;
+    height: 5px !important;
+  }
+
+  .bridge-accent span:nth-child(1) {
+    top: 0 !important;
+    left: 14px !important;
+  }
+
+  .bridge-accent span:nth-child(2) {
+    right: 0 !important;
+    bottom: 7px !important;
+  }
+
+  .bridge-accent span:nth-child(3) {
+    left: 0 !important;
+    bottom: 7px !important;
+  }
+
+  .bridge-copy {
+    display: contents !important;
+  }
+
+  .bridge-eyebrow {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    margin: 0 !important;
+    align-self: center !important;
+  }
+
+  .bridge-copy h3 {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+
+    margin: 0 !important;
+  }
+
+  .bridge-copy > p:last-child {
+    grid-column: 1 / -1 !important;
+    grid-row: 3 !important;
+
+    margin-top: 0 !important;
+  }
+
+  .bridge-link {
+    grid-column: 1 / -1 !important;
+    grid-row: 4 !important;
+
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .problem-bridge {
+    grid-template-columns: 30px minmax(0, 1fr) !important;
+    column-gap: 11px !important;
+    padding-top: 28px !important;
+  }
+
+  .bridge-accent {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .bridge-accent::before {
+    width: 26px !important;
+    height: 26px !important;
+  }
+}
