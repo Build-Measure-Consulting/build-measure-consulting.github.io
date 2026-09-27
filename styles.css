@@ -8691,3 +8691,61 @@ button {
   }
 
 }
+
+
+/* =========================================================
+   B&M — FOOTER FINAL ALIGNMENT
+   ========================================================= */
+
+/* Desktop: position Explore between brand and Connect */
+
+@media (min-width: 961px) {
+
+  .site-footer .footer-main {
+    grid-template-columns:
+      minmax(360px, 1.35fr)
+      minmax(260px, 0.9fr)
+      minmax(300px, 1fr);
+
+    gap: clamp(38px, 5vw, 80px);
+  }
+
+  .site-footer .footer-nav {
+    width: 270px;
+    max-width: 270px;
+    justify-self: start;
+  }
+
+  .site-footer .footer-links {
+    column-gap: 34px;
+  }
+
+}
+
+
+/* Mobile: center the two-column link group as one unit */
+
+@media (max-width: 600px) {
+
+  .site-footer .footer-nav {
+    width: 100%;
+    max-width: none;
+  }
+
+  .site-footer .footer-links {
+    width: 290px;
+    max-width: 100%;
+    margin-inline: auto;
+
+    grid-template-columns: 1.25fr 0.75fr;
+    column-gap: 34px;
+  }
+
+}
+
+
+/* Copyright now stands alone */
+
+.site-footer .footer-bottom {
+  justify-content: flex-start;
+}
