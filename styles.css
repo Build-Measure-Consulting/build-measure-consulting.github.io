@@ -7975,3 +7975,186 @@ button {
     margin-top: 40px !important;
   }
 }
+
+
+/* =========================================================
+   B&M — MOBILE FINAL TWO SECTIONS
+   Services → System Loop transition
+   Built Differently divider + compact principles
+   Desktop intentionally untouched
+   ========================================================= */
+
+@media (max-width: 960px) {
+
+  /* SERVICES → SYSTEM LOOP
+     Remove stacked exterior whitespace without changing
+     either section's internal composition. */
+
+  .services-section {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .services-inner,
+  .services-grid {
+    margin-bottom: 0 !important;
+  }
+
+  .services-section .services-grid > .service-card:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .bm-loop-section {
+    margin-top: 0 !important;
+    padding-top: 48px !important;
+  }
+
+
+  /* BUILT DIFFERENTLY
+     The labeled divider becomes the only divider between
+     the intro and the four principles. */
+
+  .why-bm-intro {
+    margin-bottom: 0 !important;
+    padding-bottom: 28px !important;
+    border-bottom: 0 !important;
+  }
+
+  .why-bm-principles-label {
+    margin: 0 !important;
+    padding: 0 0 18px !important;
+
+    display: grid !important;
+    grid-template-columns: minmax(24px, 1fr) auto minmax(24px, 1fr) !important;
+    align-items: center !important;
+    column-gap: 12px !important;
+  }
+
+  .why-bm-principles-label > span {
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    margin: 0 !important;
+  }
+
+  .why-bm-principles-label > p {
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .why-bm-principles {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  /* Compact mobile principle rows */
+
+  .why-bm-principle,
+  .why-bm-principle:nth-child(odd),
+  .why-bm-principle:nth-child(even) {
+    position: relative !important;
+
+    display: grid !important;
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    column-gap: 16px !important;
+    align-items: start !important;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 26px 0 28px !important;
+
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(11, 47, 91, 0.12) !important;
+  }
+
+  .why-bm-principle > .why-bm-icon {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .why-bm-principle > .why-bm-icon svg {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: 23px !important;
+    height: 23px !important;
+
+    margin: 0 !important;
+  }
+
+  .why-bm-principle > div:not(.why-bm-icon) {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .why-bm-principle h3 {
+    margin: 0 0 12px !important;
+  }
+
+  .why-bm-principle h3::after {
+    margin-top: 10px !important;
+  }
+
+  .why-bm-principle p {
+    margin: 0 !important;
+  }
+
+  .why-bm-principle > .why-bm-icon::before,
+  .why-bm-principle > .why-bm-icon::after {
+    content: none !important;
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .bm-loop-section {
+    padding-top: 44px !important;
+  }
+
+  .why-bm-intro {
+    padding-bottom: 24px !important;
+  }
+
+  .why-bm-principles-label {
+    padding-bottom: 14px !important;
+    column-gap: 10px !important;
+  }
+
+  .why-bm-principle,
+  .why-bm-principle:nth-child(odd),
+  .why-bm-principle:nth-child(even) {
+    padding-top: 24px !important;
+    padding-bottom: 26px !important;
+  }
+
+}
