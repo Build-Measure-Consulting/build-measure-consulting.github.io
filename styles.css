@@ -7965,3 +7965,13 @@ button {
     height: 26px !important;
   }
 }
+
+@media (max-width: 960px) {
+  .problem-intro {
+    padding-bottom: 0 !important;
+  }
+
+  .problem-diagnostic {
+    margin-top: 40px !important;
+  }
+}
