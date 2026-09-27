@@ -7289,3 +7289,466 @@ button {
 
 }
 
+
+/* =========================================================
+   B&M — FINAL HOMEPAGE MOBILE NORMALIZATION
+   Consolidates responsive behavior after desktop refinements.
+   Desktop remains untouched.
+   ========================================================= */
+
+@media (max-width: 960px) {
+
+  /* ---------------------------------------------------------
+     PROBLEM SECTION
+     --------------------------------------------------------- */
+
+  .problem-section {
+    padding-bottom: 54px !important;
+  }
+
+  .problem-intro {
+    gap: 34px !important;
+  }
+
+  .problem-intro h2 {
+    font-size: clamp(3rem, 10.8vw, 4.5rem) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -0.045em !important;
+  }
+
+  .problem-intro-copy {
+    font-size: 1.08rem !important;
+    line-height: 1.72 !important;
+  }
+
+  .problem-diagnostic {
+    margin-top: 50px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-top: 0 !important;
+  }
+
+  .diagnostic-heading {
+    display: grid !important;
+    grid-template-columns: minmax(24px, 1fr) auto minmax(24px, 1fr) !important;
+    align-items: center !important;
+    gap: 14px !important;
+    width: 100% !important;
+    margin-bottom: 14px !important;
+  }
+
+  .diagnostic-heading::before {
+    content: "" !important;
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,0.03),
+      rgba(157,121,240,0.32)
+    ) !important;
+  }
+
+  .diagnostic-heading > span:first-child {
+    white-space: nowrap !important;
+    text-align: center !important;
+    font-size: 0.64rem !important;
+    letter-spacing: 0.25em !important;
+  }
+
+  .diagnostic-heading .diagnostic-line {
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: linear-gradient(
+      90deg,
+      rgba(157,121,240,0.32),
+      rgba(255,255,255,0.03)
+    ) !important;
+  }
+
+  .problem-list {
+    display: block !important;
+  }
+
+  .problem-item,
+  .problem-item:nth-child(odd),
+  .problem-item:nth-child(even) {
+    min-height: 0 !important;
+    padding: 24px 0 !important;
+    display: grid !important;
+    grid-template-columns: 24px minmax(0, 1fr) !important;
+    gap: 14px !important;
+    align-items: center !important;
+  }
+
+  .problem-number {
+    display: none !important;
+  }
+
+  .problem-marker {
+    margin: 0 !important;
+    justify-self: start !important;
+  }
+
+  .problem-item-content {
+    display: block !important;
+    min-width: 0 !important;
+  }
+
+  .problem-item h3 {
+    margin: 0 !important;
+    font-size: 1.08rem !important;
+    line-height: 1.25 !important;
+    white-space: nowrap !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     SYSTEM LOOP
+     --------------------------------------------------------- */
+
+  .bm-loop-section {
+    padding-top: 72px !important;
+  }
+
+  .bm-loop-heading {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .bm-loop-stagger {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .bm-loop-stagger > .bm-loop-word {
+    display: block !important;
+    width: max-content !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-build,
+  .bm-loop-stagger > .bm-loop-word-measure,
+  .bm-loop-stagger > .bm-loop-word-improve {
+    color: #ffffff !important;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-repeat {
+    display: block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin-top: 10px !important;
+    margin-left: 0 !important;
+    color: #9d79f0 !important;
+    white-space: normal !important;
+  }
+
+  .bm-loop-stagger > .bm-loop-word-repeat > span {
+    display: inline !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    color: inherit !important;
+  }
+
+  .bm-loop-heading > p:last-child {
+    width: 100% !important;
+    max-width: none !important;
+    margin-top: 28px !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     BUILT DIFFERENTLY
+     --------------------------------------------------------- */
+
+  .why-bm-section {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+
+  .why-bm-intro {
+    padding-bottom: 48px !important;
+  }
+
+  .why-bm-principles-label {
+    margin-top: 0 !important;
+    padding-top: 34px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .why-bm-principles {
+    display: block !important;
+    margin-top: 0 !important;
+  }
+
+  .why-bm-principle,
+  .why-bm-principle:nth-child(odd),
+  .why-bm-principle:nth-child(even) {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 54px minmax(0, 1fr) !important;
+    column-gap: 18px !important;
+    align-items: start !important;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    padding: 34px 0 38px !important;
+    margin: 0 !important;
+
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 1px solid rgba(11, 47, 91, 0.12) !important;
+  }
+
+  .why-bm-principle > .why-bm-icon {
+    position: relative !important;
+    inset: auto !important;
+    left: auto !important;
+    top: auto !important;
+
+    grid-column: 1 !important;
+    grid-row: 1 / span 2 !important;
+
+    width: 54px !important;
+    height: 54px !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .why-bm-principle > .why-bm-icon svg {
+    display: block !important;
+    width: 23px !important;
+    height: 23px !important;
+  }
+
+  .why-bm-principle > div:not(.why-bm-icon) {
+    grid-column: 2 !important;
+    min-width: 0 !important;
+  }
+
+  .why-bm-principle h3 {
+    margin: 0 0 16px !important;
+    font-size: 1.45rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .why-bm-principle h3::after {
+    margin-top: 13px !important;
+  }
+
+  .why-bm-principle p {
+    margin: 0 !important;
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+
+  .why-bm-principle::before,
+  .why-bm-principle::after {
+    pointer-events: none !important;
+  }
+
+  .why-bm-question {
+    margin-top: 46px !important;
+    padding: 38px 28px !important;
+  }
+
+  .why-bm-question h3 {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+    line-height: 1.08 !important;
+  }
+}
+
+
+/* Extra-small phone refinement */
+@media (max-width: 480px) {
+
+  .problem-intro h2 {
+    font-size: clamp(2.75rem, 10.6vw, 3.65rem) !important;
+  }
+
+  .diagnostic-heading {
+    gap: 10px !important;
+  }
+
+  .diagnostic-heading > span:first-child {
+    font-size: 0.58rem !important;
+    letter-spacing: 0.20em !important;
+  }
+
+  .problem-item h3 {
+    font-size: 1rem !important;
+  }
+
+  .why-bm-principle,
+  .why-bm-principle:nth-child(odd),
+  .why-bm-principle:nth-child(even) {
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    column-gap: 16px !important;
+  }
+
+  .why-bm-principle > .why-bm-icon {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+}
+
+/* =========================================================
+   B&M — PROBLEM SECTION MOBILE
+   Clean mobile diagnostic layout
+   ========================================================= */
+
+@media (max-width: 960px) {
+
+  .problem-diagnostic {
+    border-top: 0 !important;
+  }
+
+  /* One continuous divider with centered label */
+  .diagnostic-heading {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    margin: 0 0 22px !important;
+
+    text-align: center !important;
+  }
+
+  .diagnostic-heading::before {
+    content: "" !important;
+    position: absolute !important;
+
+    left: 0 !important;
+    right: 0 !important;
+    top: 50% !important;
+
+    height: 1px !important;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(255,255,255,0.08),
+        rgba(157,121,240,0.38),
+        rgba(255,255,255,0.08)
+      ) !important;
+  }
+
+  .diagnostic-heading > span:first-child {
+    position: relative !important;
+    z-index: 1 !important;
+
+    display: inline-block !important;
+    flex: none !important;
+
+    width: auto !important;
+    max-width: none !important;
+
+    padding: 0 14px !important;
+    margin: 0 !important;
+
+    background: #082653 !important;
+
+    white-space: nowrap !important;
+    text-align: center !important;
+
+    font-size: clamp(0.46rem, 1.65vw, 0.62rem) !important;
+    line-height: 1 !important;
+    letter-spacing: 0.17em !important;
+  }
+
+  /* Existing second line is unnecessary now */
+  .diagnostic-heading .diagnostic-line {
+    display: none !important;
+  }
+
+  /* Six signals — always 2 columns on mobile */
+  .problem-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    width: 100% !important;
+    margin: 0 !important;
+
+    column-gap: 22px !important;
+    row-gap: 0 !important;
+  }
+
+  .problem-item,
+  .problem-item:nth-child(odd),
+  .problem-item:nth-child(even) {
+    min-width: 0 !important;
+    min-height: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: 14px minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 9px !important;
+
+    padding: 22px 0 !important;
+
+    border-bottom: 1px solid rgba(255,255,255,0.10) !important;
+  }
+
+  .problem-item:nth-child(odd) {
+    padding-right: 6px !important;
+  }
+
+  .problem-item:nth-child(even) {
+    padding-left: 6px !important;
+  }
+
+  .problem-number {
+    display: none !important;
+  }
+
+  .problem-marker {
+    justify-self: start !important;
+    margin: 0 !important;
+  }
+
+  .problem-item-content {
+    display: block !important;
+    min-width: 0 !important;
+  }
+
+  .problem-item h3 {
+    margin: 0 !important;
+
+    font-size: clamp(0.82rem, 3.25vw, 1.05rem) !important;
+    line-height: 1.22 !important;
+
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .problem-list {
+    column-gap: 14px !important;
+  }
+
+  .problem-item,
+  .problem-item:nth-child(odd),
+  .problem-item:nth-child(even) {
+    grid-template-columns: 12px minmax(0, 1fr) !important;
+    gap: 7px !important;
+  }
+
+  .diagnostic-heading > span:first-child {
+    padding: 0 9px !important;
+    font-size: clamp(0.42rem, 1.65vw, 0.52rem) !important;
+    letter-spacing: 0.13em !important;
+  }
+}
+
