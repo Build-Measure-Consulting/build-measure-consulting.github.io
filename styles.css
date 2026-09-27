@@ -8552,3 +8552,142 @@ button {
   }
 
 }
+
+
+/* =========================================================
+   B&M — FOOTER REFINEMENT PASS
+   Desktop + mobile alignment refinement
+   ========================================================= */
+
+/* Brand icon visibility */
+
+.site-footer .footer-logo {
+  width: 58px;
+  height: 58px;
+  padding: 7px;
+  box-sizing: border-box;
+  object-fit: contain;
+
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(180, 140, 244, 0.28);
+  border-radius: 50%;
+}
+
+
+/* Three-line tagline */
+
+.site-footer .footer-tagline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.site-footer .footer-tagline span {
+  display: block;
+  white-space: nowrap;
+}
+
+.site-footer .footer-tagline span::after {
+  content: none !important;
+}
+
+
+/* Explore — two balanced columns */
+
+.site-footer .footer-nav {
+  width: 100%;
+  max-width: 330px;
+  justify-self: center;
+}
+
+.site-footer .footer-nav .footer-label {
+  width: 100%;
+  text-align: center;
+}
+
+.site-footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+  row-gap: 14px;
+  width: 100%;
+}
+
+.site-footer .footer-links a {
+  text-align: left;
+}
+
+
+/* ---------------------------------------------------------
+   Mobile footer refinement
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .site-footer .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-footer .footer-brand-lockup {
+    justify-content: center;
+    width: fit-content;
+    margin-inline: auto;
+  }
+
+  .site-footer .footer-logo {
+    width: 52px;
+    height: 52px;
+    padding: 6px;
+  }
+
+  .site-footer .footer-tagline {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-footer .footer-nav {
+    width: min(100%, 330px);
+    max-width: 330px;
+    margin-inline: auto;
+  }
+
+  .site-footer .footer-nav .footer-label {
+    text-align: center;
+  }
+
+  .site-footer .footer-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 42px;
+    row-gap: 15px;
+    width: 100%;
+  }
+
+  .site-footer .footer-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-footer .footer-connect .footer-label {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-footer .footer-email {
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .site-footer .footer-socials {
+    justify-content: center;
+    width: 100%;
+  }
+
+}
