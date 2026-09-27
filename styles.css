@@ -8749,3 +8749,16 @@ button {
 .site-footer .footer-bottom {
   justify-content: flex-start;
 }
+
+
+/* =========================================================
+   B&M — DESKTOP EXPLORE FINAL POSITION
+   ========================================================= */
+
+@media (min-width: 961px) {
+
+  .site-footer .footer-nav {
+    transform: translateX(-35px);
+  }
+
+}
